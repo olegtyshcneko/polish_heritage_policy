@@ -18,6 +18,7 @@
             margin-bottom: 28px;
             padding-bottom: 24px;
             border-bottom: 3px solid #DC143C;
+            position: relative;
         }
         h1 { color: #DC143C; font-size: 2rem; margin-bottom: 10px; }
         .app-name { color: #666; font-size: 1.1rem; margin-bottom: 12px; }
@@ -29,7 +30,7 @@
             padding: 14px;
             margin-bottom: 26px;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             gap: 12px;
         }
@@ -58,9 +59,15 @@
             height: 42px;
             padding: 0;
             border-radius: 999px;
-            border: 1px solid #ddd;
-            background: #fff;
+            border: none;
+            background: #f1f3f5;
             text-decoration: none;
+        }
+        .lang-switch-top {
+            position: absolute;
+            right: 0;
+            top: 58%;
+            transform: translateY(-50%);
         }
         .lang-switch svg {
             display: block;
@@ -109,6 +116,7 @@
             .container { padding: 20px 15px; }
             h1 { font-size: 1.6rem; }
             h2 { font-size: 1.2rem; }
+            .lang-switch-top { right: 2px; top: 56%; }
         }
     </style>
 </head>
@@ -118,6 +126,12 @@
             <h1>Privacy Policy</h1>
             <p class="app-name">Polish Heritage: Quiz Explorer</p>
             <p class="last-updated">Last Updated: February 21, 2026</p>
+            <a class="lang-switch lang-switch-top" href="privacy_policy_pl.html" aria-label="Przelacz na polski" title="Polski">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <rect width="24" height="12" y="0" fill="#ffffff"></rect>
+                    <rect width="24" height="12" y="12" fill="#dc143c"></rect>
+                </svg>
+            </a>
         </header>
 
         <nav class="nav-bar" aria-label="Legal navigation">
@@ -125,12 +139,6 @@
                 <a class="active" href="./">Privacy Policy</a>
                 <a href="terms_of_use.html">Terms of Use</a>
             </div>
-            <a class="lang-switch" href="privacy_policy_pl.html" aria-label="Przelacz na polski" title="Polski">
-                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                    <rect width="24" height="12" y="0" fill="#ffffff"></rect>
-                    <rect width="24" height="12" y="12" fill="#dc143c"></rect>
-                </svg>
-            </a>
         </nav>
 
         <main>
