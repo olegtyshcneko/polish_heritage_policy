@@ -48,6 +48,31 @@
             font-size: 0.9rem;
         }
 
+        .legal-links {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 28px;
+            flex-wrap: wrap;
+        }
+
+        .legal-links a {
+            display: inline-block;
+            padding: 8px 14px;
+            border-radius: 999px;
+            border: 1px solid #ddd;
+            text-decoration: none;
+            color: #333;
+            background-color: #fff;
+            font-weight: 600;
+        }
+
+        .legal-links a.active {
+            border-color: #DC143C;
+            background-color: #fff5f7;
+            color: #DC143C;
+        }
+
         h2 {
             color: #DC143C;
             font-size: 1.4rem;
@@ -133,8 +158,13 @@
         <header>
             <h1>Privacy Policy</h1>
             <p class="app-name">Polish Heritage: Quiz Explorer</p>
-            <p class="last-updated">Last Updated: November 25, 2025</p>
+            <p class="last-updated">Last Updated: February 21, 2026</p>
         </header>
+
+        <nav class="legal-links" aria-label="Legal pages">
+            <a class="active" href="./">Privacy Policy</a>
+            <a href="terms_of_use.html">Terms of Use</a>
+        </nav>
 
         <main>
             <section>
