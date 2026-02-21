@@ -56,12 +56,17 @@
             justify-content: center;
             width: 42px;
             height: 42px;
+            padding: 0;
+            overflow: hidden;
             border-radius: 999px;
             border: 1px solid #ddd;
             background: #fff;
             text-decoration: none;
-            font-size: 1.2rem;
-            line-height: 1;
+        }
+        .lang-switch svg {
+            display: block;
+            width: 100%;
+            height: 100%;
         }
         h2 {
             color: #DC143C;
@@ -120,7 +125,13 @@
                 <a class="active" href="./">Privacy Policy</a>
                 <a href="terms_of_use.html">Terms of Use</a>
             </div>
-            <a class="lang-switch" href="privacy_policy_pl.html" aria-label="Przelacz na polski" title="Polski">🇵🇱</a>
+            <a class="lang-switch" href="privacy_policy_pl.html" aria-label="Przelacz na polski" title="Polski">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <rect width="24" height="12" y="0" fill="#ffffff"></rect>
+                    <rect width="24" height="12" y="12" fill="#dc143c"></rect>
+                    <rect x="0.5" y="0.5" width="23" height="23" fill="none" stroke="#cfcfcf"></rect>
+                </svg>
+            </a>
         </nav>
 
         <main>
